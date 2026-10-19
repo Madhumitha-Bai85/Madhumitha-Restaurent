@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Madhumitha Restaurant</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #faf5eb;
+            color: #493021;
+        }
+
+        header {
+            background: #fffaf1;
+            padding: 24px 7%;
+            border-bottom: 1px solid #dfc89e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #b38a43;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493021;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #b38a43;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 65px 20px 35px;
+        }
+
+        .heading small {
+            color: #a77b35;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-top: 14px;
+        }
+
+        .about {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 25px 30px 80px;
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            align-items: center;
+            gap: 55px;
+        }
+
+        .photo-frame {
+            padding: 12px;
+            border: 1px solid #c6a15d;
+            background: #fffaf1;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 430px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .story small {
+            color: #a77b35;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .story h2 {
+            font-size: 35px;
+            margin: 16px 0 20px;
+            line-height: 1.3;
+        }
+
+        .story p {
+            font-size: 14px;
+            line-height: 2;
+            color: #756252;
+            margin-bottom: 17px;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            color: #a77b35;
+            font-size: 21px;
+            margin-top: 22px;
+        }
+
+        .values {
+            background: #efe2cc;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .values h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .values p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 2;
+            color: #756252;
+        }
+
+        footer {
+            background: #24170f;
+            color: #e8d7bf;
+            text-align: center;
+            padding: 28px 15px;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        footer strong {
+            color: #d9b56e;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 20px 7% 55px;
+            }
+
+            .photo-frame img {
+                height: 380px;
+            }
+
+            .story h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Madhumitha <span>Restaurant</span></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="chefs.html">Chefs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <small>Get to Know Us</small>
+        <h1>About Madhumitha Restaurant</h1>
+    </section>
+
+    <section class="about">
+
+        <div class="photo-frame">
+            <img src="myphoto.jpeg"
+                 alt="Madhumitha">
+        </div>
+
+        <div class="story">
+            <small>Our Story</small>
+
+            <h2>A Passion for Food & Beautiful Moments</h2>
+
+            <p>
+                Welcome to Madhumitha Restaurant, a place inspired
+                by the happiness of sharing delicious food and
+                creating beautiful dining experiences.
+            </p>
+
+            <p>
+                Our vision is to bring together wonderful flavours,
+                warm hospitality and an elegant atmosphere.
+                Every meal should feel special, memorable and full
+                of happiness.
+            </p>
+
+            <p>
+                Madhumitha Restaurant celebrates the love of food,
+                the joy of togetherness and the beauty of a great
+                dining experience.
+            </p>
+
+            <div class="signature">With Love, Madhumitha</div>
+        </div>
+
+    </section>
+
+    <section class="values">
+        <h2>Our Philosophy</h2>
+
+        <p>
+            Great food brings people together.
+            We believe that warm hospitality, delightful flavours
+            and beautiful moments make every dining experience
+            truly special.
+        </p>
+    </section>
+
+    <footer>
+        <strong>Madhumitha Restaurant</strong>
+        <p>Delicious food with amazing taste.</p>
+        <p>© 2026 Madhumitha Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

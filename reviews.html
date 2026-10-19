@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | Madhumitha Restaurant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.review-grid {
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+}
+.review-card {
+    background:#fffaf2; border:1px solid #e4d3b8;
+    padding:28px; border-radius:4px;
+}
+.stars { color:#b38736; font-size:21px; letter-spacing:3px; }
+.review-card h3 { color:#4b3024; margin:12px 0; }
+.review-card p { font-family:Arial,sans-serif; font-size:14px; }
+@media(max-width:700px) {
+    .review-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+<header class="navbar">
+<a href="index.html" class="logo">Madhumitha<span>Restaurant</span></a>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a>
+<a href="menu.html">Menu</a><a href="gallery.html">Gallery</a>
+<a href="reservation.html">Reservation</a><a href="reviews.html" class="active">Reviews</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a href="reservation.html" class="nav-button">Book a Table</a>
+</header>
+
+<section class="section-padding">
+<div class="section-heading">
+<p class="eyebrow">KIND WORDS</p>
+<h2>Customer Reviews</h2>
+<p>Sample review cards for demonstrating the website design.</p>
+</div>
+
+<div class="review-grid">
+<article class="review-card">
+<div class="stars">★★★★★</div>
+<h3>Delicious Food</h3>
+<p>"The food presentation and traditional flavours made this a wonderful dining experience."</p>
+<p><strong>— Sample Customer 1</strong></p>
+</article>
+<article class="review-card">
+<div class="stars">★★★★★</div>
+<h3>Lovely Atmosphere</h3>
+<p>"A beautiful setting for a family meal. The cream and gold style feels elegant."</p>
+<p><strong>— Sample Customer 2</strong></p>
+</article>
+<article class="review-card">
+<div class="stars">★★★★☆</div>
+<h3>Great Experience</h3>
+<p>"A lovely concept for enjoying good food and special moments with friends."</p>
+<p><strong>— Sample Customer 3</strong></p>
+</article>
+</div>
+
+<p style="text-align:center;margin-top:30px;font-family:Arial,sans-serif;font-size:13px;">
+These are example reviews, not verified customer testimonials.
+</p>
+</section>
+
+<footer class="footer"><div class="copyright">© 2026 Madhumitha Restaurant. All rights reserved.</div></footer>
+</body>
+</html>

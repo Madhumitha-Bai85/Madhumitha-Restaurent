@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Chefs | Madhumitha Restaurant</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #faf5eb;
+            color: #493021;
+        }
+
+        header {
+            padding: 22px 6%;
+            background: #fffaf1;
+            border-bottom: 1px solid #dfc89e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font: 700 25px 'Playfair Display', serif;
+        }
+
+        .logo span {
+            color: #b38a43;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493021;
+            font-size: 12px;
+        }
+
+        nav a:hover {
+            color: #b38a43;
+        }
+
+        .hero {
+            padding: 75px 20px;
+            text-align: center;
+            background: #493021;
+            color: #fffaf1;
+        }
+
+        .hero small {
+            color: #e6c786;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 58px);
+            margin: 16px 0;
+        }
+
+        .hero p {
+            color: #eadac4;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .section {
+            padding: 65px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title small {
+            color: #a77b35;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+        .chef-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .chef-card {
+            background: #fffaf1;
+            border: 1px solid #e4d1af;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .chef-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px #49302118;
+        }
+
+        .chef-card img {
+            display: block;
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+        }
+
+        .chef-info {
+            padding: 24px 18px 28px;
+        }
+
+        .chef-info h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            color: #a77b35;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .chef-info p {
+            font-size: 13px;
+            color: #786758;
+            line-height: 1.8;
+        }
+
+        .quote {
+            background: #efe2cc;
+            text-align: center;
+            padding: 60px 8%;
+        }
+
+        .quote h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .quote p {
+            max-width: 680px;
+            margin: auto;
+            color: #786758;
+            line-height: 2;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            background: #24170f;
+            color: #e8d7bf;
+            padding: 30px 15px;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        footer strong {
+            font: 700 21px 'Playfair Display', serif;
+            color: #d9b56e;
+        }
+
+        @media (max-width: 800px) {
+            .chef-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            header {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .chef-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 45px 6%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Madhumitha <span>Restaurant</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="chefs.html">Chefs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <small>Meet Our Culinary Team</small>
+    <h1>Our Wonderful Chefs</h1>
+    <p>Passion, creativity and a love for delicious food.</p>
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <small>The People Behind the Flavours</small>
+        <h2>Meet Our Kitchen Team</h2>
+    </div>
+
+    <div class="chef-grid">
+
+        <div class="chef-card">
+            <img
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=85"
+                alt="Professional chef in a kitchen">
+
+            <div class="chef-info">
+                <h3>Head Chef</h3>
+                <div class="role">Signature Dishes</div>
+                <p>
+                    Bringing creativity and care to every dish
+                    with a passion for memorable flavours.
+                </p>
+            </div>
+        </div>
+
+        <div class="chef-card">
+            <img
+                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=800&q=85"
+                alt="Chef preparing food">
+
+            <div class="chef-info">
+                <h3>Indian Cuisine Chef</h3>
+                <div class="role">Traditional Flavours</div>
+                <p>
+                    Celebrating Indian cuisine with aromatic spices
+                    and comforting food inspirations.
+                </p>
+            </div>
+        </div>
+
+        <div class="chef-card">
+            <img
+                src="https://images.unsplash.com/photo-1574966390714-65f3f4c8e5a0?auto=format&fit=crop&w=800&q=85"
+                alt="Chef working in a restaurant kitchen">
+
+            <div class="chef-info">
+                <h3>Creative Chef</h3>
+                <div class="role">Modern Creations</div>
+                <p>
+                    Inspired by fresh ideas and beautiful
+                    presentation that makes meals special.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="quote">
+    <h2>Great Food Begins with Passion</h2>
+    <p>
+        At Madhumitha Restaurant, we celebrate the people,
+        creativity and love that make every meal memorable.
+        Our chef section showcases the art and joy of cooking.
+    </p>
+</section>
+
+<footer>
+    <strong>Madhumitha Restaurant</strong>
+    <p>Delicious food with amazing taste.</p>
+    <p>© 2026 Madhumitha Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

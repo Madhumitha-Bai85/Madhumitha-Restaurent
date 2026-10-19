@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation | Madhumitha Restaurant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.booking-form {
+    max-width:650px; margin:auto; background:#fffaf2;
+    padding:30px; border:1px solid #e3d2b8;
+}
+.booking-form label {
+    display:block; margin:14px 0 6px; font-family:Arial,sans-serif;
+}
+.booking-form input,.booking-form select,.booking-form textarea {
+    width:100%; padding:12px; border:1px solid #d5c2a6;
+    background:white; font:14px Arial,sans-serif;
+}
+.booking-form button {
+    margin-top:22px; border:0; cursor:pointer;
+}
+.form-message { margin-top:15px; color:#4b3024; }
+</style>
+</head>
+<body>
+<header class="navbar">
+<a href="index.html" class="logo">Madhumitha<span>Restaurant</span></a>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a>
+<a href="menu.html">Menu</a><a href="gallery.html">Gallery</a>
+<a href="reservation.html" class="active">Reservation</a>
+<a href="reviews.html">Reviews</a><a href="contact.html">Contact</a>
+</nav>
+<a href="reservation.html" class="nav-button">Book a Table</a>
+</header>
+
+<section class="section-padding">
+<div class="section-heading">
+<p class="eyebrow">AN EXPERIENCE TO REMEMBER</p>
+<h2>Reserve Your Table</h2>
+<p>Fill in your details to try our sample reservation form.</p>
+</div>
+
+<form class="booking-form" id="bookingForm">
+<label for="name">Full Name</label>
+<input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+<label for="email">Email Address</label>
+<input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+<label for="phone">Phone Number</label>
+<input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+
+<label for="date">Reservation Date</label>
+<input id="date" name="date" type="date" required>
+
+<label for="time">Preferred Time</label>
+<select id="time" name="time" required>
+<option value="">Select a time</option>
+<option>12:00 PM</option><option>1:00 PM</option>
+<option>2:00 PM</option><option>7:00 PM</option>
+<option>8:00 PM</option><option>9:00 PM</option>
+</select>
+
+<label for="guests">Number of Guests</label>
+<select id="guests" name="guests" required>
+<option value="">Select guests</option>
+<option>1</option><option>2</option><option>3</option>
+<option>4</option><option>5</option><option>6</option>
+</select>
+
+<label for="requests">Special Requests</label>
+<textarea id="requests" name="requests" rows="4" placeholder="Any special requests?"></textarea>
+
+<button type="submit" class="btn btn-brown">Submit Reservation</button>
+<p id="bookingMessage" class="form-message" role="status"></p>
+</form>
+</section>
+
+<footer class="footer"><div class="copyright">© 2026 Madhumitha Restaurant. All rights reserved.</div></footer>
+<script>
+document.getElementById("date").min =
+    new Date().toLocaleDateString("en-CA");
+
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("bookingMessage").textContent =
+        "Demo only: Your form is valid, but no booking has been saved. Please contact the restaurant to confirm.";
+});
+</script>
+</body>
+</html>

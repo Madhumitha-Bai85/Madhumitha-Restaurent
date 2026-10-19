@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Madhumitha Restaurant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.contact-grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:35px;
+}
+.contact-panel {
+    background:#fffaf2; padding:28px; border:1px solid #e4d3b8;
+}
+.contact-panel h3 { color:#4b3024; margin-bottom:15px; }
+.contact-panel p { margin-bottom:14px; overflow-wrap:anywhere; }
+.contact-panel label {
+    display:block; margin:12px 0 5px; font-family:Arial,sans-serif;
+}
+.contact-panel input,.contact-panel textarea {
+    width:100%; padding:12px; border:1px solid #d5c2a6;
+    font:14px Arial,sans-serif;
+}
+@media(max-width:700px) {
+    .contact-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+<header class="navbar">
+<a href="index.html" class="logo">Madhumitha<span>Restaurant</span></a>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a>
+<a href="menu.html">Menu</a><a href="gallery.html">Gallery</a>
+<a href="reservation.html">Reservation</a><a href="reviews.html">Reviews</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+<a href="reservation.html" class="nav-button">Book a Table</a>
+</header>
+
+<section class="section-padding">
+<div class="section-heading">
+<p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+<h2>Contact Madhumitha</h2>
+<p>Update the details below with your actual restaurant information.</p>
+</div>
+
+<div class="contact-grid">
+<div class="contact-panel">
+<h3>Restaurant Information</h3>
+<p><strong>Address:</strong> Add your restaurant address here.</p>
+<p><strong>Phone:</strong> Add your restaurant phone number.</p>
+<p><strong>Email:</strong> Add your restaurant email address.</p>
+<p><strong>Opening Hours:</strong> Add your actual opening hours.</p>
+</div>
+
+<div class="contact-panel">
+<h3>Send Us a Message</h3>
+<form id="contactForm">
+<label for="contactName">Your Name</label>
+<input id="contactName" type="text" required placeholder="Enter your name">
+
+<label for="contactEmail">Email Address</label>
+<input id="contactEmail" type="email" required placeholder="Enter your email">
+
+<label for="contactMessage">Message</label>
+<textarea id="contactMessage" rows="5" required placeholder="Write your message"></textarea>
+
+<button class="btn btn-brown" type="submit" style="margin-top:15px;">Send Message</button>
+<p id="contactStatus" role="status" style="margin-top:12px;"></p>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="footer"><div class="copyright">© 2026 Madhumitha Restaurant. All rights reserved.</div></footer>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("contactStatus").textContent =
+        "Demo only: Your message has not been sent. Connect a backend or email service to receive messages.";
+});
+</script>
+</body>
+</html>
